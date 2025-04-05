@@ -1,0 +1,28 @@
+[project]
+name = "solemne1web"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Ignacio Rehbein", email = "78046088+Nach0t@users.noreply.github.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+
+dependencies = [
+    "fastapi>=0.115.12,<0.116.0",
+    "uvicorn>=0.34.0,<0.35.0"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+httpx = "^0.28.1"
+flake8 = "^7.2.0"
+black = "^25.1.0"
+isort = "^6.0.1"

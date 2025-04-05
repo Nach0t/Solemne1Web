@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 120
+
+select = [
+    "E",    # Errores de estilo (pycodestyle)
+    "F",    # Errores de Flake8 (errores generales)
+    "I",    # Orden de importaciones (isort)
+    "B",    # Errores de seguridad y buenas prácticas (flake8-bugbear)
+    "UP",   # Mejoras para versiones nuevas de Python
+    "S",    # Seguridad (bandit)
+    "C4",   # Buenas prácticas en la complejidad del código (mccabe)
+]
+ignore = [
+    "S101",  # Ignora el uso de `assert` en los tests
+    "E501",  # Longitud de línea
+    "I001",  # Ignora la verificación de orden de los imports
+]
+
+[tool.ruff.format]
+quote-style = "double"  # Usa comillas dobles para los strings
+indent-style = "space"  # Usa espacios en lugar de tabs
+line-ending = "lf"       # Fuerza saltos de línea tipo Unix (LF)
