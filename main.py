@@ -1,7 +1,7 @@
 from datetime import datetime
-
-import uvicorn
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
+import uvicorn
 
 app = FastAPI()
 
@@ -19,6 +19,13 @@ async def get_time():
     formatted_time = now.strftime("%Y-%m-%d %H:%M:%S")
     return {"time": formatted_time}
 
+
+@app.get("/")
+async def redirect_to_time():
+    """
+    Redirige la raíz del servidor a /time.
+    """
+    return RedirectResponse(url="/time")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000, reload=True)
