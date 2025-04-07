@@ -1,14 +1,9 @@
 from datetime import datetime
-from fastapi.responses import RedirectResponse
+
 import uvicorn
 from fastapi import FastAPI
 
 app = FastAPI()
-
-
-@app.get("/", include_in_schema=False)
-async def root():
-    return RedirectResponse(url="/time")
 
 
 @app.get(
