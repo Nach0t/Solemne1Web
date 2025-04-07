@@ -12,8 +12,6 @@ select = [
 ]
 ignore = [
     "S101",  # Ignora el uso de `assert` en los tests
-    "E501",  # Longitud de línea
-    "I001",  # Ignora la verificación de orden de los imports
 ]
 
 [tool.ruff.format]
