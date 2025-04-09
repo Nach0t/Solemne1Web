@@ -37,8 +37,8 @@ El objetivo es poner en práctica el uso de contenedores **Docker** y flujos de 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/Nach0t/Solemne1Webs
-   cd Solemne1Webs
+   git clone https://github.com/Nach0t/Solemne1Web
+   cd Solemne1Web
    ```
 
 2. Instala Poetry (si no lo tienes):
